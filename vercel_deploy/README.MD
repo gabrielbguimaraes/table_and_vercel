@@ -1,6 +1,6 @@
 # Exemplo de aplicação contendo tecnologia de templates do Jinja, arquivos externos CSS e imagens. 
 
-## Autor: Fabrício Galende M. de Carvalho, PhD
+## Autor: Gabriel Guimarães
 
 Para executar o sistema:
 
