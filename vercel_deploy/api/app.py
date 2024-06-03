@@ -1,17 +1,21 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/", methods=["GET", "POST"])
 def home():
-    return render_template('home.html')
+    result = None
+    if request.method == "POST":
+        try:
+            number = int(request.form["number"])
+            result = [number + i for i in range(1, 5)]
+        except ValueError:
+            result = None
+    return render_template("home.html", result=result)
 
 
 @app.route('/personalizada')
 def home_perso():
-    usu = 'Fabrício Galende M. de Carvalho'
-    # Para ler dados do BD ou csv (usar pandas)
-    # criar a variável com os dados da lista
-    # enviar para a aplicação de modo similar.
+    usu = 'Gabriel Guimarães'
     return render_template('home_personalizada.html', usuario=usu)
 

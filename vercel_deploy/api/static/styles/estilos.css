@@ -1,22 +1,108 @@
-ul{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+nav {
+    background-color: blue;
+    color: white;
+}
+
+nav ul {
     list-style-type: none;
-    background-color: black;
-    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
-ul > li{
+
+nav ul li {
     display: inline-block;
-    width: 30%;
+    margin: 0 10px;
 }
 
-a{
+nav ul li a {
+    text-decoration: none;
     color: yellow;
+    padding: 10px 20px;
+    display: block;
 }
-a:visited{
+
+nav ul li a:hover {
+    background-color:black;
+    color: black;
+}
+
+nav ul li a:visited {
     color: white;
 }
 
-img{
+/* Estilo para imagens */
+img {
     display: block;
-    margin: auto;
+    margin: 20px auto;
     width: 35%;
+}
+
+/* Estilo adicional para a área de conteúdo */
+.content {
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para o formulário */
+form {
+    margin: 20px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
 }
