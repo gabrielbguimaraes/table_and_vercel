@@ -19,3 +19,6 @@ def home_perso():
     usu = 'Gabriel Guimarães'
     return render_template('home_personalizada.html', usuario=usu)
 
+if __name__ == '__main__':
+    app.run('0.0.0.0')
+
